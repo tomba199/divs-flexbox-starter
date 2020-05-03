@@ -101,6 +101,27 @@ html {
   height: 100%;
 }
 
+header,
+footer {
+  height: 80px;
+  width: 100%;
+}
+
+main {
+    border: #b3d4fc 3px solid;
+    height: 250px;
+    width: 100%;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #b3d4fc 3px solid;
+
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
@@ -108,14 +129,26 @@ body {
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
+    /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+    color: #fff;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#div-1, #div-2, #div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: rgb(99, 99, 99);
   line-height: 1.5em;
@@ -130,7 +163,7 @@ span {
     color: #222;
 }
 
-.div-1, .div-2 {
+#div-1, #div-2 {
     border-right: 3px solid #b3d4fc;
 }
 
